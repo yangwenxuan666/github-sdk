@@ -5,6 +5,8 @@ on:
 strict: false
 permissions:
   contents: read
+  models: read
+  copilot-requests: write
 tools:
   bash: [":*"]
   edit:

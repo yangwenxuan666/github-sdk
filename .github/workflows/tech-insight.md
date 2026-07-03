@@ -45,6 +45,7 @@ network:
     - "lobste.rs"
     - "dev.to"
 safe-outputs:
+  github-token: "${{ secrets.GH_AW_GITHUB_MCP_SERVER_TOKEN || secrets.GH_AW_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}"
   create-pull-request:
     title-prefix: "[tech-insight] "
     labels: [automation, tech-insight]
